@@ -1,24 +1,28 @@
-# README
+# Members Only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple Ruby on Rails app demonstrating authentication with Devise.
 
-Things you may want to cover:
+Users can create posts. Logged-in members can see the author of each post, while guests can only see the content.
 
-* Ruby version
+## Features
 
-* System dependencies
+* Authentication with Devise
+* Users can sign up and log in
+* Members can create posts
+* Author names visible only to signed-in users
 
-* Configuration
+## Setup
 
-* Database creation
+```bash
+git clone https://github.com/PratiAmalden/members-only
+cd members-only
+bundle install
+rails db:migrate
+rails server
+```
 
-* Database initialization
+Visit: [http://localhost:3000](http://localhost:3000)
 
-* How to run the test suite
+## Credits
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Built as part of The Odin Project curriculum.
